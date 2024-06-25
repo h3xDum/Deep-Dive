@@ -1,4 +1,4 @@
-# Install script for directory: /home/h3x_dump/projects/DeepDive
+# Install script for directory: /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,12 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/h3x_dump/projects/DeepDive/build/external/glfw/cmake_install.cmake")
+  include("/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/external/glfw/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/h3x_dump/projects/DeepDive/build/external/tinyobjloader/cmake_install.cmake")
+  include("/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/external/tinyobjloader/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/h3x_dump/projects/DeepDive/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

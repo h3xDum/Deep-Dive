@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/h3x_dump/projects/DeepDive/bin/GameEngine"
-  "/home/h3x_dump/projects/DeepDive/bin/GameEngine.pdb"
+  "/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine"
+  "/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine.pdb"
   "CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o"
   "CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o.d"
   "CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.o"

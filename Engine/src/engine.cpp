@@ -21,7 +21,7 @@ int main() {
 
   // Set up scene
   Entity monkey, sun;
-  if (!myObjLoader.load("sphere.obj",nullptr, sun, myRenderer)){ return -1; }
+  if (!myObjLoader.load("sphere.obj","container.jpg", sun, myRenderer)){ return -1; }
   sun.translate(glm::vec3(-0.5f , 0.5f, 0.0f)); 
   
   if (!myObjLoader.load("monkey.obj", "container.jpg", monkey, myRenderer)){ return -1; }

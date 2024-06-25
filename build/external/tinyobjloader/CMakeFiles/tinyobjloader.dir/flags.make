@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/h3x_dump/projects/DeepDive/Engine/include -I/home/h3x_dump/projects/DeepDive/external/glad/include -I/home/h3x_dump/projects/DeepDive/external/stb_image
+CXX_INCLUDES = -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/include -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glad/include -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/stb_image
 
 CXX_FLAGS =  -Wall -Wextra -pedantic -std=c++11
 

@@ -50,14 +50,14 @@ unset(_cmake_expected_targets)
 add_library(tinyobjloader STATIC IMPORTED)
 
 set_target_properties(tinyobjloader PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/h3x_dump/projects/DeepDive/external/tinyobjloader"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/tinyobjloader"
 )
 
 # Import target "tinyobjloader" for configuration ""
 set_property(TARGET tinyobjloader APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(tinyobjloader PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
-  IMPORTED_LOCATION_NOCONFIG "/home/h3x_dump/projects/DeepDive/build/external/tinyobjloader/libtinyobjloader.a"
+  IMPORTED_LOCATION_NOCONFIG "/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/external/tinyobjloader/libtinyobjloader.a"
   )
 
 # This file does not depend on other imported targets which have

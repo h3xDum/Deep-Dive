@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11
 
-C_INCLUDES = -I/home/h3x_dump/projects/DeepDive/Engine/include -I/home/h3x_dump/projects/DeepDive/external/glad/include -I/home/h3x_dump/projects/DeepDive/external/stb_image -I/home/h3x_dump/projects/DeepDive/external/glfw/include -I/home/h3x_dump/projects/DeepDive/external/glfw/src -I/home/h3x_dump/projects/DeepDive/build/external/glfw/src
+C_INCLUDES = -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/include -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glad/include -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/stb_image -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glfw/include -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glfw/src -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/external/glfw/src
 
 C_FLAGS = -std=c99 -fPIC -Wall
 

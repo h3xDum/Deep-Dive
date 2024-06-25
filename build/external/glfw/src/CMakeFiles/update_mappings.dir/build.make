@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/h3x_dump/projects/DeepDive
+CMAKE_SOURCE_DIR = /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/h3x_dump/projects/DeepDive/build
+CMAKE_BINARY_DIR = /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build
 
 # Utility rule file for update_mappings.
 
@@ -67,8 +67,8 @@ include external/glfw/src/CMakeFiles/update_mappings.dir/compiler_depend.make
 include external/glfw/src/CMakeFiles/update_mappings.dir/progress.make
 
 external/glfw/src/CMakeFiles/update_mappings:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/h3x_dump/projects/DeepDive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
-	cd /home/h3x_dump/projects/DeepDive/external/glfw/src && /usr/bin/cmake -P /home/h3x_dump/projects/DeepDive/external/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
+	cd /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glfw/src && /usr/bin/cmake -P /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
 
 update_mappings: external/glfw/src/CMakeFiles/update_mappings
 update_mappings: external/glfw/src/CMakeFiles/update_mappings.dir/build.make
@@ -79,10 +79,10 @@ external/glfw/src/CMakeFiles/update_mappings.dir/build: update_mappings
 .PHONY : external/glfw/src/CMakeFiles/update_mappings.dir/build
 
 external/glfw/src/CMakeFiles/update_mappings.dir/clean:
-	cd /home/h3x_dump/projects/DeepDive/build/external/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
+	cd /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/external/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
 .PHONY : external/glfw/src/CMakeFiles/update_mappings.dir/clean
 
 external/glfw/src/CMakeFiles/update_mappings.dir/depend:
-	cd /home/h3x_dump/projects/DeepDive/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/h3x_dump/projects/DeepDive /home/h3x_dump/projects/DeepDive/external/glfw/src /home/h3x_dump/projects/DeepDive/build /home/h3x_dump/projects/DeepDive/build/external/glfw/src /home/h3x_dump/projects/DeepDive/build/external/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glfw/src /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/external/glfw/src /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/external/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : external/glfw/src/CMakeFiles/update_mappings.dir/depend
 

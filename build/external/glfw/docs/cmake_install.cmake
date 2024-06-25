@@ -1,4 +1,4 @@
-# Install script for directory: /home/h3x_dump/projects/DeepDive/external/glfw/docs
+# Install script for directory: /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glfw/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

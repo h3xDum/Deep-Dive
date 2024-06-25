@@ -1,7 +1,7 @@
 external/tinyobjloader/CMakeFiles/tinyobjloader.dir/tiny_obj_loader.cc.o: \
- /home/h3x_dump/projects/DeepDive/external/tinyobjloader/tiny_obj_loader.cc \
+ /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/tinyobjloader/tiny_obj_loader.cc \
  /usr/include/stdc-predef.h \
- /home/h3x_dump/projects/DeepDive/external/tinyobjloader/tiny_obj_loader.h \
+ /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/tinyobjloader/tiny_obj_loader.h \
  /usr/include/c++/13/map /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

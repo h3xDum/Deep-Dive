@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/h3x_dump/projects/DeepDive
+CMAKE_SOURCE_DIR = /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/h3x_dump/projects/DeepDive/build
+CMAKE_BINARY_DIR = /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GameEngine.dir/depend.make
@@ -70,116 +70,116 @@ include CMakeFiles/GameEngine.dir/progress.make
 include CMakeFiles/GameEngine.dir/flags.make
 
 CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o: /home/h3x_dump/projects/DeepDive/Engine/src/Entity.cpp
+CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o: /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/Entity.cpp
 CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/DeepDive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o -MF CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o.d -o CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o -c /home/h3x_dump/projects/DeepDive/Engine/src/Entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o -MF CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o.d -o CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o -c /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/Entity.cpp
 
 CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/h3x_dump/projects/DeepDive/Engine/src/Entity.cpp > CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/Entity.cpp > CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.i
 
 CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/h3x_dump/projects/DeepDive/Engine/src/Entity.cpp -o CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/Entity.cpp -o CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.s
 
 CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.o: /home/h3x_dump/projects/DeepDive/Engine/src/ObjLoader.cpp
+CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.o: /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/ObjLoader.cpp
 CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/DeepDive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.o -MF CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.o.d -o CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.o -c /home/h3x_dump/projects/DeepDive/Engine/src/ObjLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.o -MF CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.o.d -o CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.o -c /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/ObjLoader.cpp
 
 CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/h3x_dump/projects/DeepDive/Engine/src/ObjLoader.cpp > CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/ObjLoader.cpp > CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.i
 
 CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/h3x_dump/projects/DeepDive/Engine/src/ObjLoader.cpp -o CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/ObjLoader.cpp -o CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.s
 
 CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.o: /home/h3x_dump/projects/DeepDive/Engine/src/Render.cpp
+CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.o: /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/Render.cpp
 CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/DeepDive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.o -MF CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.o.d -o CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.o -c /home/h3x_dump/projects/DeepDive/Engine/src/Render.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.o -MF CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.o.d -o CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.o -c /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/Render.cpp
 
 CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/h3x_dump/projects/DeepDive/Engine/src/Render.cpp > CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/Render.cpp > CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.i
 
 CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/h3x_dump/projects/DeepDive/Engine/src/Render.cpp -o CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/Render.cpp -o CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.s
 
 CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.o: /home/h3x_dump/projects/DeepDive/Engine/src/Window.cpp
+CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.o: /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/Window.cpp
 CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/DeepDive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.o -MF CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.o.d -o CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.o -c /home/h3x_dump/projects/DeepDive/Engine/src/Window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.o -MF CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.o.d -o CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.o -c /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/Window.cpp
 
 CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/h3x_dump/projects/DeepDive/Engine/src/Window.cpp > CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/Window.cpp > CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.i
 
 CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/h3x_dump/projects/DeepDive/Engine/src/Window.cpp -o CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/Window.cpp -o CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.s
 
 CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.o: /home/h3x_dump/projects/DeepDive/Engine/src/engine.cpp
+CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.o: /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/engine.cpp
 CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/DeepDive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.o -MF CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.o.d -o CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.o -c /home/h3x_dump/projects/DeepDive/Engine/src/engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.o -MF CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.o.d -o CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.o -c /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/engine.cpp
 
 CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/h3x_dump/projects/DeepDive/Engine/src/engine.cpp > CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/engine.cpp > CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.i
 
 CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/h3x_dump/projects/DeepDive/Engine/src/engine.cpp -o CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/src/engine.cpp -o CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.s
 
 CMakeFiles/GameEngine.dir/external/glad/src/glad.c.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/external/glad/src/glad.c.o: /home/h3x_dump/projects/DeepDive/external/glad/src/glad.c
+CMakeFiles/GameEngine.dir/external/glad/src/glad.c.o: /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glad/src/glad.c
 CMakeFiles/GameEngine.dir/external/glad/src/glad.c.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/DeepDive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/GameEngine.dir/external/glad/src/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/external/glad/src/glad.c.o -MF CMakeFiles/GameEngine.dir/external/glad/src/glad.c.o.d -o CMakeFiles/GameEngine.dir/external/glad/src/glad.c.o -c /home/h3x_dump/projects/DeepDive/external/glad/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/GameEngine.dir/external/glad/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/external/glad/src/glad.c.o -MF CMakeFiles/GameEngine.dir/external/glad/src/glad.c.o.d -o CMakeFiles/GameEngine.dir/external/glad/src/glad.c.o -c /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glad/src/glad.c
 
 CMakeFiles/GameEngine.dir/external/glad/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/GameEngine.dir/external/glad/src/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/h3x_dump/projects/DeepDive/external/glad/src/glad.c > CMakeFiles/GameEngine.dir/external/glad/src/glad.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glad/src/glad.c > CMakeFiles/GameEngine.dir/external/glad/src/glad.c.i
 
 CMakeFiles/GameEngine.dir/external/glad/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/GameEngine.dir/external/glad/src/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/h3x_dump/projects/DeepDive/external/glad/src/glad.c -o CMakeFiles/GameEngine.dir/external/glad/src/glad.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glad/src/glad.c -o CMakeFiles/GameEngine.dir/external/glad/src/glad.c.s
 
 CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.o: /home/h3x_dump/projects/DeepDive/external/tinyobjloader/tiny_obj_loader.cc
+CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.o: /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/tinyobjloader/tiny_obj_loader.cc
 CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/DeepDive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.o -MF CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.o.d -o CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.o -c /home/h3x_dump/projects/DeepDive/external/tinyobjloader/tiny_obj_loader.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.o -MF CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.o.d -o CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.o -c /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/tinyobjloader/tiny_obj_loader.cc
 
 CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/h3x_dump/projects/DeepDive/external/tinyobjloader/tiny_obj_loader.cc > CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/tinyobjloader/tiny_obj_loader.cc > CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.i
 
 CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/h3x_dump/projects/DeepDive/external/tinyobjloader/tiny_obj_loader.cc -o CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/tinyobjloader/tiny_obj_loader.cc -o CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.s
 
 CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.o: /home/h3x_dump/projects/DeepDive/external/stb_image/stb_image.cpp
+CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.o: /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/stb_image/stb_image.cpp
 CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/DeepDive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.o -MF CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.o.d -o CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.o -c /home/h3x_dump/projects/DeepDive/external/stb_image/stb_image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.o -MF CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.o.d -o CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.o -c /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/stb_image/stb_image.cpp
 
 CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/h3x_dump/projects/DeepDive/external/stb_image/stb_image.cpp > CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/stb_image/stb_image.cpp > CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.i
 
 CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/h3x_dump/projects/DeepDive/external/stb_image/stb_image.cpp -o CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/stb_image/stb_image.cpp -o CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.s
 
 # Object files for target GameEngine
 GameEngine_OBJECTS = \
@@ -195,24 +195,24 @@ GameEngine_OBJECTS = \
 # External object files for target GameEngine
 GameEngine_EXTERNAL_OBJECTS =
 
-/home/h3x_dump/projects/DeepDive/bin/GameEngine: CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o
-/home/h3x_dump/projects/DeepDive/bin/GameEngine: CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.o
-/home/h3x_dump/projects/DeepDive/bin/GameEngine: CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.o
-/home/h3x_dump/projects/DeepDive/bin/GameEngine: CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.o
-/home/h3x_dump/projects/DeepDive/bin/GameEngine: CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.o
-/home/h3x_dump/projects/DeepDive/bin/GameEngine: CMakeFiles/GameEngine.dir/external/glad/src/glad.c.o
-/home/h3x_dump/projects/DeepDive/bin/GameEngine: CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.o
-/home/h3x_dump/projects/DeepDive/bin/GameEngine: CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.o
-/home/h3x_dump/projects/DeepDive/bin/GameEngine: CMakeFiles/GameEngine.dir/build.make
-/home/h3x_dump/projects/DeepDive/bin/GameEngine: external/glfw/src/libglfw3.a
-/home/h3x_dump/projects/DeepDive/bin/GameEngine: /usr/lib/x86_64-linux-gnu/librt.a
-/home/h3x_dump/projects/DeepDive/bin/GameEngine: /usr/lib/x86_64-linux-gnu/libm.so
-/home/h3x_dump/projects/DeepDive/bin/GameEngine: CMakeFiles/GameEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/h3x_dump/projects/DeepDive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable /home/h3x_dump/projects/DeepDive/bin/GameEngine"
+/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine: CMakeFiles/GameEngine.dir/Engine/src/Entity.cpp.o
+/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine: CMakeFiles/GameEngine.dir/Engine/src/ObjLoader.cpp.o
+/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine: CMakeFiles/GameEngine.dir/Engine/src/Render.cpp.o
+/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine: CMakeFiles/GameEngine.dir/Engine/src/Window.cpp.o
+/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine: CMakeFiles/GameEngine.dir/Engine/src/engine.cpp.o
+/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine: CMakeFiles/GameEngine.dir/external/glad/src/glad.c.o
+/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine: CMakeFiles/GameEngine.dir/external/tinyobjloader/tiny_obj_loader.cc.o
+/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine: CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.o
+/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine: CMakeFiles/GameEngine.dir/build.make
+/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine: external/glfw/src/libglfw3.a
+/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine: /usr/lib/x86_64-linux-gnu/librt.a
+/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine: /usr/lib/x86_64-linux-gnu/libm.so
+/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine: CMakeFiles/GameEngine.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GameEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/GameEngine.dir/build: /home/h3x_dump/projects/DeepDive/bin/GameEngine
+CMakeFiles/GameEngine.dir/build: /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/bin/GameEngine
 .PHONY : CMakeFiles/GameEngine.dir/build
 
 CMakeFiles/GameEngine.dir/clean:
@@ -220,6 +220,6 @@ CMakeFiles/GameEngine.dir/clean:
 .PHONY : CMakeFiles/GameEngine.dir/clean
 
 CMakeFiles/GameEngine.dir/depend:
-	cd /home/h3x_dump/projects/DeepDive/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/h3x_dump/projects/DeepDive /home/h3x_dump/projects/DeepDive /home/h3x_dump/projects/DeepDive/build /home/h3x_dump/projects/DeepDive/build /home/h3x_dump/projects/DeepDive/build/CMakeFiles/GameEngine.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/CMakeFiles/GameEngine.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/GameEngine.dir/depend
 

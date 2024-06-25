@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/h3x_dump/projects/DeepDive
+CMAKE_SOURCE_DIR = /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/h3x_dump/projects/DeepDive/build
+CMAKE_BINARY_DIR = /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include external/glfw/CMakeFiles/uninstall.dir/compiler_depend.make
 include external/glfw/CMakeFiles/uninstall.dir/progress.make
 
 external/glfw/CMakeFiles/uninstall:
-	cd /home/h3x_dump/projects/DeepDive/build/external/glfw && /usr/bin/cmake -P /home/h3x_dump/projects/DeepDive/build/external/glfw/cmake_uninstall.cmake
+	cd /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/external/glfw && /usr/bin/cmake -P /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/external/glfw/cmake_uninstall.cmake
 
 uninstall: external/glfw/CMakeFiles/uninstall
 uninstall: external/glfw/CMakeFiles/uninstall.dir/build.make
@@ -78,10 +78,10 @@ external/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : external/glfw/CMakeFiles/uninstall.dir/build
 
 external/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /home/h3x_dump/projects/DeepDive/build/external/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/external/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : external/glfw/CMakeFiles/uninstall.dir/clean
 
 external/glfw/CMakeFiles/uninstall.dir/depend:
-	cd /home/h3x_dump/projects/DeepDive/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/h3x_dump/projects/DeepDive /home/h3x_dump/projects/DeepDive/external/glfw /home/h3x_dump/projects/DeepDive/build /home/h3x_dump/projects/DeepDive/build/external/glfw /home/h3x_dump/projects/DeepDive/build/external/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glfw /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/external/glfw /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/build/external/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : external/glfw/CMakeFiles/uninstall.dir/depend
 

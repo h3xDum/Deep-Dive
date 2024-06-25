@@ -1,7 +1,7 @@
 CMakeFiles/GameEngine.dir/external/stb_image/stb_image.cpp.o: \
- /home/h3x_dump/projects/DeepDive/external/stb_image/stb_image.cpp \
+ /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/stb_image/stb_image.cpp \
  /usr/include/stdc-predef.h \
- /home/h3x_dump/projects/DeepDive/external/stb_image/stb_image.h \
+ /home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/stb_image/stb_image.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

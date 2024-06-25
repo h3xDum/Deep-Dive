@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/h3x_dump/projects/DeepDive/Engine/include -I/home/h3x_dump/projects/DeepDive/external/glad/include -I/home/h3x_dump/projects/DeepDive/external/stb_image -I/home/h3x_dump/projects/DeepDive/external/glfw/include
+C_INCLUDES = -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/include -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glad/include -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/stb_image -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glfw/include
 
 C_FLAGS = 
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/h3x_dump/projects/DeepDive/Engine/include -I/home/h3x_dump/projects/DeepDive/external/glad/include -I/home/h3x_dump/projects/DeepDive/external/stb_image -I/home/h3x_dump/projects/DeepDive/external/glfw/include
+CXX_INCLUDES = -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/Engine/include -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glad/include -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/stb_image -I/home/h3x_dump/projects/Deep-Dive/github/Deep-Dive/external/glfw/include
 
 CXX_FLAGS =  -Wall -Wextra -pedantic -std=gnu++20
 
