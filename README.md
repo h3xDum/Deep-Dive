@@ -22,3 +22,10 @@ sudo apt-get install libglfw3
 sudo apt-get install libglfw3-dev
 ```
 
+
+## Usage 
+You can run the engine as is simply by going inside the 'bin' directory located  
+in the root folder and running the 'GameEngine'
+```bash 
+cd bin && ./GameEngine
+```
