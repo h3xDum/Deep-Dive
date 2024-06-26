@@ -2,6 +2,11 @@
 
 Entity::Entity() :
   shouldUpdate(false),
+  m_VAO(-1),
+  m_VBO(-1),
+  m_EBO(-1),
+  m_EBOsize(-1),
+  m_textureID(-1),
   m_material_ambient(3, 1.0f),
   m_material_diffuse(3, 0.8f),
   m_material_specular(3, 0.5f),
@@ -17,6 +22,22 @@ unsigned int Entity::get_vao() const {
 void Entity::set_vao(const unsigned int vao){
   this->m_VAO = vao;
   this->shouldUpdate = true;
+}
+
+unsigned int Entity::get_ebo() const {
+  return this->m_EBO;
+}
+
+void Entity::set_ebo(const unsigned int ebo) {
+  this->m_EBO = ebo;
+}
+
+unsigned int Entity::get_vbo() const {
+  return this->m_VBO;
+}
+
+void Entity::set_vbo(const unsigned int vbo){
+  this->m_VBO = vbo;
 }
 
 unsigned int Entity::get_ebo_size() const {

@@ -13,16 +13,15 @@ public:
   Window();
   bool init();
 
-  GLFWwindow* getGlfwWindow();
-  bool run();
+  GLFWwindow* getGlfwWindow() const;
+  bool run() const;
   ~Window();
 
 private:
-  int m_height = 800;
-  int m_width = 1200;
-  const char* m_titile = "Deep Dive";
-  
-  GLFWwindow* m_window = nullptr;
+  int m_height;
+  int m_width;
+  const char* m_titile;
+  GLFWwindow* m_window;
 
 };
 

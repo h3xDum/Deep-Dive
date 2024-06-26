@@ -1,7 +1,8 @@
 #include "../include/ObjLoader.hpp"   
 
 
-ObjLoader::ObjLoader(){
+ObjLoader::ObjLoader() :
+ m_basePath(""){
 }
 
 bool ObjLoader::init() {
@@ -17,14 +18,15 @@ bool ObjLoader::init() {
 bool ObjLoader::parse(const std::string& objFile, const std::string& textureFile,
                       Entity &entity, const unsigned int programID,
                       std::vector<float>& vertexData,std::vector<unsigned int>& indices,
-                      std::vector<tinyobj::material_t>& materials) {
+                      std::vector<tinyobj::material_t>& materials) const {
   
   // Parse object file information
   tinyobj::attrib_t attrib;
   std::vector<tinyobj::shape_t> shapes;
   std::string warn, err;
+  std::string objPath = this->m_basePath + "/" + objFile;
 
-  bool ret = tinyobj::LoadObj(&attrib, &shapes, &materials, &warn, &err, objFile.c_str(),this->m_basePath.c_str(), true);
+  bool ret = tinyobj::LoadObj(&attrib, &shapes, &materials, &warn, &err, objPath.c_str(),this->m_basePath.c_str(), true);
     if (!warn.empty()) {
         std::cout << "WARN: " << warn << std::endl;
     }
@@ -86,48 +88,51 @@ bool ObjLoader::parse(const std::string& objFile, const std::string& textureFile
 
   
   // Parse texture information
+  if (textureFile.empty()) {
+    entity.set_texture_id(0);
+    return true;
+  }
   unsigned int textureID;
-    glGenTextures(1, &textureID);
+  glGenTextures(1, &textureID);
+  int width, height, nrChannels;
+  std::string texturePath = m_basePath + "/" + textureFile;
+  unsigned char *data = stbi_load(texturePath.c_str(), &width, &height, &nrChannels, 0);
+  if (data) {
+      GLenum format;
+      if (nrChannels == 1)
+          format = GL_RED;
+      else if (nrChannels == 3)
+          format = GL_RGB;
+      else if (nrChannels == 4)
+          format = GL_RGBA;
 
-    int width, height, nrChannels;
-    std::string texturePath = m_basePath + "/" + textureFile;
-    unsigned char *data = stbi_load(texturePath.c_str(), &width, &height, &nrChannels, 0);
-    if (data) {
-        GLenum format;
-        if (nrChannels == 1)
-            format = GL_RED;
-        else if (nrChannels == 3)
-            format = GL_RGB;
-        else if (nrChannels == 4)
-            format = GL_RGBA;
+      glBindTexture(GL_TEXTURE_2D, textureID);
+      glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
+      glGenerateMipmap(GL_TEXTURE_2D);
 
-        glBindTexture(GL_TEXTURE_2D, textureID);
-        glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
-        glGenerateMipmap(GL_TEXTURE_2D);
-
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
-        stbi_image_free(data);
-    } else {
-        std::cout << "Failed to load texture" << std::endl;
-        stbi_image_free(data);
-    }
+      glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+      glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+      glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+      glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+      stbi_image_free(data);
+    } 
+  else {
+    std::cout << "Failed to load texture" << std::endl;
+    stbi_image_free(data);
+  }
   entity.set_texture_id(textureID);
   return true;
 }
 
 
-bool ObjLoader::load(const char* objFile, const char* textureFile, Entity &entity, Renderer &renderer){ 
+bool ObjLoader::load(const std::string& objFile, const std::string& textureFile, Entity &entity, Renderer &renderer) const { 
   
   // Parse object 
   std::vector<float> vertexData;
   std::vector<unsigned int> indices;
   std::vector<tinyobj::material_t> materials;
-  std::string tinyObjPath = this->m_basePath + "/" + objFile;
-  if (!ObjLoader::parse(tinyObjPath,textureFile,entity,renderer.get_programID(),vertexData,indices, materials)) {
+
+  if (!ObjLoader::parse(objFile, textureFile, entity, renderer.get_programID(), vertexData, indices, materials)) {
     return false;
   }
   
@@ -158,13 +163,22 @@ bool ObjLoader::load(const char* objFile, const char* textureFile, Entity &entit
 
   glBindVertexArray(0);
 
+  entity.set_vbo(VBO);
+  entity.set_ebo(EBO);
+  entity.set_vao(VAO);
   entity.set_ebo_size(indices.size());
-  entity.set_vao(VAO); 
-  
-
   return true;
 }
 
+bool  ObjLoader::load(const std::string& objFile, const std::string *textureFile, Entity &entity, Renderer &renderer) const{
+  if (textureFile != nullptr) {
+    std::cerr << "[!] Error, you can either pass a texture name or nullptr into the load function " << std::endl;
+    return false;
+  }
+
+  return ObjLoader::load(objFile,"", entity, renderer);
+
+}
 
 ObjLoader::~ObjLoader(){
 }

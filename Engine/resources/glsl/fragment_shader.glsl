@@ -14,37 +14,39 @@ struct Material {
 
 uniform Material material;
 uniform sampler2D ourTexture;
-
+uniform bool textureUsed;
 
 void main() {
-  /* basic Phong lighting */
+    /* basic Phong lighting */
 
-  // setting light source
-  vec3 lightColor  = vec3(1.0, 1.0, 1.0);
-  vec3 lightSource = vec3(1.0, 0.0, 0.0);
+    // setting light source
+    vec3 lightColor  = vec3(1.0, 1.0, 1.0);
+    vec3 lightSource = vec3(0.0, 0.0, 0.0);
 
-  // calculating ambient
-  vec3 ambient = material.ambient;
+    // calculating ambient
+    vec3 ambient = material.ambient;
 
-  // calculating diffuse
-  vec3 norm = normalize(vertexNormal);
-  vec3 lightDir = normalize(lightSource - vertexPos);
-  float diffuseStrength = max(0.0, dot(lightDir, norm));
-  vec3 diffuse = material.diffuse * diffuseStrength * lightColor;
+    // calculating diffuse
+    vec3 norm = normalize(vertexNormal);
+    vec3 lightDir = normalize(lightSource - vertexPos);
+    float diffuseStrength = max(0.0, dot(lightDir, norm));
+    vec3 diffuse = material.diffuse * diffuseStrength * lightColor;
 
-  // calculating specular (currently set to zero)
-  vec3 specular = vec3(0.0, 0.0, 0.0);
+    // calculating specular (currently set to zero)
+    vec3 specular = vec3(0.0, 0.0, 0.0);
 
-  // final lighting = ambient + diffuse + specular
-  vec3 lighting = ambient + diffuse + specular;
+    // final lighting = ambient + diffuse + specular
+    vec3 lighting = ambient + diffuse + specular;
 
-  // model final color = vertexColor * lighting
-  vec3 vertexColor = vec3(0.75, 0.75, 0.75);
-  vec3 modelColor = vertexColor * lighting;
-  
+    // model final color = vertexColor * lighting
+    vec3 vertexColor = vec3(0.75, 0.75, 0.75);
+    vec3 modelColor = vertexColor * lighting;
 
-
-  // output 
-  fragColor = texture(ourTexture,vertexTexCoords);
+    // Check if the default texture (texture 0) is used
+    if (textureUsed) {
+        fragColor = texture(ourTexture, vertexTexCoords) * vec4(lighting, 1.0);
+    } else {
+        fragColor = vec4(modelColor, 1.0);
+    }
 }
 

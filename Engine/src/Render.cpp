@@ -1,10 +1,12 @@
 #include "../include/Renderer.hpp"
 
 
-Renderer::Renderer() : m_window(nullptr),m_programID(0) {
+Renderer::Renderer() :
+  m_window(nullptr),
+  m_programID(0) {
 }
 
-std::string Renderer::file_to_str(const char* path) {
+std::string Renderer::file_to_str(const char* path) const {
     std::ifstream ifstream;
     ifstream.exceptions(std::ifstream::failbit | std::ifstream::badbit);
 
@@ -77,46 +79,37 @@ bool Renderer::init(Window* window) {
     return true;
 }
 
-void Renderer::set_background() {
-    glClearColor(0.0f, 0.0f, 0.0f, 1.0f); // black
+void Renderer::set_background() const {
+    glClearColor(1.0f, 1.0f, 0.0f, 1.0f); // black
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
-unsigned int Renderer::get_programID() {
+unsigned int Renderer::get_programID() const {
     return this->m_programID;
 }
 
-void Renderer::draw(Entity &entity) {
-    if (entity.shouldUpdate) {
-      // position
-      GLint uniformLoc;
-      uniformLoc = glGetUniformLocation(this->m_programID, "model");
-      if (uniformLoc != -1) {
+void Renderer::draw(const Entity &entity) const  {
+  if (entity.shouldUpdate) {
+    // position
+    GLint uniformLoc;
+    uniformLoc = glGetUniformLocation(this->m_programID, "model");
+    if (uniformLoc != -1) {
       glUniformMatrix4fv(uniformLoc, 1, GL_FALSE, glm::value_ptr(entity.get_model_matrix()));
-      } 
-      // material 
-      glUniform3fv(glGetUniformLocation(this->m_programID, "material.ambient"),1, entity.get_material_ambient().data());
-      glUniform3fv(glGetUniformLocation(this->m_programID, "material.diffuse"), 1, entity.get_material_diffuse().data());
-      glUniform3fv(glGetUniformLocation(this->m_programID, "material.specular"), 1, entity.get_material_specular().data()); 
-    }
+    } 
+   
+    // material 
+    glUniform3fv(glGetUniformLocation(this->m_programID, "material.ambient"),1, entity.get_material_ambient().data());
+    glUniform3fv(glGetUniformLocation(this->m_programID, "material.diffuse"), 1, entity.get_material_diffuse().data());
+    glUniform3fv(glGetUniformLocation(this->m_programID, "material.specular"), 1, entity.get_material_specular().data()); 
+  }
+ 
+  // textures
+  bool textureUsed =  (entity.get_texture_id() == 0) ? false :  true;
+  glUniform1i(glGetUniformLocation(this->m_programID,"textureUsed"),textureUsed);
   glActiveTexture(GL_TEXTURE0);
   glBindTexture(GL_TEXTURE_2D, entity.get_texture_id());
-  
     
-  /*
-  // position
-  GLint uniformLoc;
-  uniformLoc = glGetUniformLocation(this->m_programID, "model");
-  if (uniformLoc != -1) {
-    glUniformMatrix4fv(uniformLoc, 1, GL_FALSE, glm::value_ptr(entity.get_model_matrix()));
-  } 
-    
-  // material 
-  glUniform3fv(glGetUniformLocation(this->m_programID, "material.ambient"),1, entity.get_material_ambient().data());
-  glUniform3fv(glGetUniformLocation(this->m_programID, "material.diffuse"), 1, entity.get_material_diffuse().data());
-  glUniform3fv(glGetUniformLocation(this->m_programID, "material.specular"), 1, entity.get_material_specular().data()); 
-  */
-
+  // Draw on screen 
   glBindVertexArray(entity.get_vao());
   glDrawElements(GL_TRIANGLES, entity.get_ebo_size(), GL_UNSIGNED_INT, 0);
   glBindVertexArray(0);

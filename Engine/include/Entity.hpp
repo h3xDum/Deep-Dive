@@ -15,6 +15,8 @@ public:
   ~Entity(); 
 
   unsigned int get_vao() const;
+  unsigned int get_vbo() const;
+  unsigned int get_ebo() const;
   unsigned int get_ebo_size()const;
   unsigned int get_texture_id() const;
 
@@ -40,13 +42,13 @@ public:
 private:
 
   // screen vertex data 
-  unsigned int m_VAO = -1;
-  unsigned int m_EBOsize = -1;
-  unsigned int m_textureID = -1;
+  unsigned int m_VAO;
+  unsigned int m_VBO;
+  unsigned int m_EBO;
+  unsigned int m_EBOsize;
+  unsigned int m_textureID;
 
   // attributes 
-  float m_x , m_y , m_z = 0;
-  float speed = 0;
   std::vector<GLfloat> m_material_ambient; 
   std::vector<GLfloat> m_material_diffuse;
   std::vector<GLfloat> m_material_specular;
@@ -55,6 +57,8 @@ private:
   // special access
   friend class ObjLoader;
   void set_vao(const unsigned int vao);
+  void set_vbo(const unsigned int vbo);
+  void set_ebo(const unsigned int vbo);
   void set_ebo_size(const unsigned int ebo_size);
   void set_texture_id(const unsigned int textureID);
 };
