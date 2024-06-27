@@ -34,7 +34,7 @@ int main() {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     myRenderer.set_background();
     
-    //sun.translate(glm::vec3(0.0002f, 0.0f, 0.0f));
+
     monkey.rotate(0.045f, glm::vec3(1.0f, 0.0f, 0.0f));
     myRenderer.draw(sun);
     myRenderer.draw(monkey);

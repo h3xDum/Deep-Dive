@@ -12,7 +12,11 @@ Entity::Entity() :
   m_material_specular(3, 0.5f),
   m_model_matrix(glm::mat4(1.0f)){
 }
+
 Entity::~Entity(){
+  glDeleteVertexArrays(1, &this->m_VAO);
+  glDeleteBuffers(1, &this->m_VBO);
+  glDeleteBuffers(1, &this->m_EBO);
 }
 
 unsigned int Entity::get_vao() const {
