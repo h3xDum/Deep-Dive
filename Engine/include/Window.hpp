@@ -2,7 +2,8 @@
 #define WINDOW_HPP
 
 #include "../../external/glad/include/glad/glad.h"
-#include <GLFW/glfw3.h>
+//#include <GLFW/glfw3.h>
+#include "../../external/glfw/include/GLFW/glfw3.h"
 
 #include "general.hpp"
 
