@@ -8,7 +8,8 @@
 #include <sstream>
 #include <string>
 #include <stdexcept>
-
+#include <unordered_map>
+#include <functional>
 
 
 #endif // !GENERAL_HPP

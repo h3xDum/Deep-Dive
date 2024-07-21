@@ -2,18 +2,20 @@
 #include "../include/Renderer.hpp"
 #include "../include/ObjLoader.hpp"
 #include "../include/Entity.hpp"
-
+#include "../include/InputManager.hpp"
 int main() {
 
   // Load & Init 
   Window myWindow;
   Renderer myRenderer;
   ObjLoader myObjLoader;
+  InputManager myIoManager; 
 
   try {
     if (!myWindow.init()) { throw std::runtime_error("[!] Failed to initialize main window"); }
     if (!myRenderer.init(&myWindow)){ throw std::runtime_error("[!] Failed to initialize the Renderer"); }
     if (!myObjLoader.init()){ throw std::runtime_error("[!] Failed to initialize object loader"); }
+    if (!myIoManager.init(myWindow.getGlfwWindow())){throw std::runtime_error("[!] Failed to initialize IO manager"); } 
   } catch (const std::exception& e) {
       std::cerr << e.what() << std::endl;
       return -1;
@@ -39,9 +41,10 @@ int main() {
     myRenderer.draw(sun);
     myRenderer.draw(monkey);
     
-
+    myIoManager.process_input();
     glfwSwapBuffers(myWindow.getGlfwWindow());
     glfwPollEvents();
+
   }
 
   return 0;
